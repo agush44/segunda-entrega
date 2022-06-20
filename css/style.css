@@ -1,0 +1,433 @@
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.header{
+    width: 100%;
+    height: 12vh
+}
+
+.navbar-brand{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+#navBar{
+    padding: 0;
+    background: linear-gradient(0deg, rgba(249,249,249,1) 0%, rgba(168,168,168,1) 100%);
+}
+
+.nav-item a{
+    padding-bottom: 2px;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid #333;
+}
+
+a:active{
+    color: #333;
+}
+
+a:visited{
+    color: #333;
+}
+
+.footer{
+    background: linear-gradient(0deg, rgba(168,168,168,1) 0%, rgba(249,249,249,1) 100%);
+    height: 8vh;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+
+.footer li{
+    list-style: none;
+    padding: 20px;
+}
+
+.footer a{
+    padding: 5px;
+}
+
+.footer a:hover{ 
+    border-bottom: 2px solid #333;
+}
+
+.iconos{
+    padding-left: 10px;
+}
+
+/* INDEX */
+
+.indexGrilla {  
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "section section aside aside"
+        "section section aside aside"
+        "footer footer footer footer";
+    }
+
+.header { 
+    grid-area: header; 
+}
+
+.section { 
+    grid-area: section; 
+}
+
+.aside { 
+    grid-area: aside; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.section{
+    height: 80vh;
+}
+
+.aside{
+    height: 80vh;
+}
+
+.cajaTexto{
+    width: 100%;
+    padding: 50px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;
+}
+
+.descripcion{
+    text-align: justify;
+    padding: 50px 70px;
+    line-height: 2rem;
+}
+
+.cajaImagen{
+    height: 80vh;
+    box-sizing: border-box;
+    padding-right: 8rem;
+}
+
+.imagen{
+    width: 420px;
+    height: 519px;
+}
+
+/* PRODUCTOS */
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.card-body p{
+    color: rgb(51, 51, 51, .7);
+}
+
+.tituloProd{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.descripcionProd{
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+#panes{
+    width: 286px;
+    height: 287px;
+}
+
+#cardContenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    width: 50%;
+	padding: 8px 16px;
+	margin-top: 32px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	display: block;
+	color: #fff !important;
+	background-color: #000;
+}
+
+.btn:hover{
+    background-color: rgb(51, 51, 51, 0.7);
+    border: rgb(51, 51, 51, 0.7) 1px solid;
+}
+
+/* GALERÍA */
+
+.galeriaText{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.galeriaText h2{
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.galeriaText p{
+    line-height: 2rem;
+    text-align: justify;
+    padding: 0 5rem;
+}
+
+.carousel-inner{
+    width: 100%;
+} 
+
+.contenedor-galeria{
+    width: 40%;
+    height: 95vh;
+    margin-left: 25rem;
+    margin-top: 2rem;
+}
+
+/* NOSOTROS */
+
+#nosotros{
+    width: 100%;
+    height: 80vh;
+}
+
+.nosotrosTitulo{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.quienesSomos{
+    height: 80vh;
+    text-align: justify;
+    line-height: 2rem;
+    padding: 100px 0 100px 150px;
+}
+
+.asideNosotros{
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+}  
+
+.imgBruschettas{
+    height: 70vh;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.form{
+    width: 300px;
+	padding: 16px;
+	border-radius: 10px;
+	margin: auto;
+	background-color: #ccc;
+    margin-bottom: 2rem;
+}
+
+form label{
+	width: 72px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width: 180px;
+	padding: 3px 10px;
+	border: 1px solid #f6f6f6;
+	border-radius: 3px;
+	background-color: #f6f6f6;
+	margin: 8px 0;
+	display: inline-block;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	padding: 8px 16px;
+	margin-top: 32px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	display: block;
+	color: #fff;
+	background-color: #000;
+} 
+
+form input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid #f6f6f6;
+	border-radius: 3px;
+	background-color: #f6f6f6;			
+	margin: 8px 0;
+	resize:none;
+	display:block;
+}
+
+.submit:hover{
+    background-color: rgb(51, 51, 51, 0.7);
+    border: rgb(51, 51, 51, 0.7) 1px solid;
+}
+
+@media (max-width: 480px) {
+
+/* GENERAL */
+
+.nav-item a:hover{
+    border-bottom: none;
+}
+
+/* INDEX */
+
+.indexGrilla {  
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "section section section section"
+        "aside aside aside aside"
+        "footer footer footer footer";
+    }
+
+.section{
+    height: 65vh;
+}
+
+.aside{
+    height: 72vh;
+}
+
+.descripcion{
+    padding: 50px 20px;
+}
+
+.cajaTexto{
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.cajaImagen{
+    width: 100%;
+    padding-right: 0;
+}
+
+.imagen{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* PRODUCTOS */
+
+.card{
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.descripcionProd{
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+
+/* GALERÍA */
+
+.main-galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+.galeriaText{
+    height: 50vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+.galeriaText p{
+    padding: 1rem;
+}
+
+.contenedor-galeria{
+    width: 50%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+/* NOSOTROS */
+
+#nosotros{
+    height: 130vh;
+}
+
+.quienesSomos{
+    width: 100%;
+    height: 50vh;
+    padding: 2rem 2rem 0 3rem;
+} 
+
+.imgBruschettas{
+    width: 90%;
+    height: 60vh;
+    margin-left: 2.5rem;
+}
+
+.asideNosotros{
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+/* CONTACTO */
+
+.containerForm{
+    height: 80vh;
+}
+}
